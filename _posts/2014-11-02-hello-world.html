@@ -1,9 +1,19 @@
 ---
 layout: orderedlist
-title: 你好，世界
+title: Hello World
 ---
+<header>
+	<h1>{{ page.title }}</h1>
+	<p></p>
+	<p class="view"><small><a href="{{ site.baseurl }}/">HOME</a></small></p>
+</header>	
+
 <section>
-<h2>{{ page.title }}</h2>
-<p>我的第一篇文章</p>
-<p>{{ page.date | date_to_string }}</p>
+	<h2>
+<a id="h2" class="anchor" href="#h2" aria-hidden="true"><span class="octicon octicon-link"></span></a>{{ page.date | date_to_string }}</h2>
+<p>"May the queries flow, and your pagers be quiet."</p>
 </section>
+
+<footer>
+	<p><small>{{ page.date | date_to_string }}</small></p>
+</footer>
