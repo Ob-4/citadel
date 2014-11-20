@@ -18,43 +18,17 @@ title: Citadel
 </header>
 
 <section>
-<hr>
 
-<h1>
-<a id="h1" class="anchor" href="#h1" aria-hidden="true"><span class="octicon octicon-link"></span></a>h1</h1>
+{% for post in site.posts %}
+    <div>
+    	<hr>
+    	<a href="{{ site.baseurl }}{{ post.url }}"><h3>{{ post.title }}</h3></a>
+    	<p><em>{{ post.excerpt }}</em></p>    	
+    </div>
+    <br>
+{% endfor %}
 
-<h2>
-<a id="h2" class="anchor" href="#h2" aria-hidden="true"><span class="octicon octicon-link"></span></a>h2</h2>
 
-<h3>
-<a id="h3" class="anchor" href="#h3" aria-hidden="true"><span class="octicon octicon-link"></span></a>h3</h3>
-
-<p><a href="url">link</a></p>
-
-<p><strong>B</strong></p>
-
-<p><em>i</em></p>
-
-<p><code>&lt;&gt;</code></p>
-
-<pre><code>* 1 
-* 2 
-</code></pre>
-
-<pre><code>1. a 
-2. b 
-3. c 
-</code></pre>
-
-<blockquote>
-<p>dot </p>
-
-<p>tod</p>
-</blockquote>
-
-<hr>
-
-<p>dfa</p>
 </section>
 
 <footer>
